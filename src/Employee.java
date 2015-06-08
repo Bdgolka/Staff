@@ -1,3 +1,5 @@
+import java.util.function.ToIntFunction;
+
 public class Employee implements Employed {
 
 	private String name;
@@ -50,9 +52,21 @@ public class Employee implements Employed {
 		return 0.0;
 	}
 	
+
 	public String toString(){
-		return getName()+": "+getDepartment()+" department";
 		
+		String type="";
+	if(contract.equals(0))
+			type = "temporary";
+	else if(contract.equals(1))
+		type = "training";
+	else if(contract.equals(2))
+		type = "indefinite";
+	else
+	throw new IllegalArgumentException();
+	
+		return getName()+": "+getDepartment()+" department";
+		 
 	}
 
 }

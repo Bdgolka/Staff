@@ -8,7 +8,7 @@ public class Staff {
 				new EngineeringEmployee("Elizabeth", 3, contract.TRAINING),
 				new EngineeringEmployee("Michael", 2, contract.TRAINING),
 				new AdministrationEmployee("Albert")};
-		System.out.println("Hello world!");
+		System.out.println(empl[0].toString());
 	}
 
 }
