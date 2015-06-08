@@ -7,18 +7,13 @@ public class Employee implements Employed {
 
 	public Employee(String name, int years, String department, contract contract) {
 		this.name = name;
-		setContract(contract);
+		this.contract=contract;
 		this.years = years;		
 		this.department = department;
 	}
 
-	public static String getContract() {
-		if(contract.equals(0)){
-			return "temporary";
-		}
-		else 
-		throw new IllegalArgumentException();
-			
+	public static contract getContract() {
+			return contract;
 	}
 
 	public void setContract(contract contract) {

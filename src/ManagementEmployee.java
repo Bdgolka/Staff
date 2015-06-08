@@ -3,7 +3,7 @@ public class ManagementEmployee extends Employee {
 	private contract contracts;
 
 	public ManagementEmployee(String name, int years) {
-		super(name, years, "Management", getContract().INDEFINITE);
+		super(name, years, "Management", contract.INDEFINITE);
 	}
 
 	public contract getContracts() {

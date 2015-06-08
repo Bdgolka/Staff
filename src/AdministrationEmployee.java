@@ -4,7 +4,7 @@ public class AdministrationEmployee extends Employee{
 	private contract contracts;
 
 	public AdministrationEmployee(String name) {
-		super(name, 0, "Administration", setContract(contract.TEMPORARY));
+		super(name, 0, "Administration", contract.TEMPORARY);
 		}
 	
 
